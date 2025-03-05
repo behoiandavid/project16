@@ -406,6 +406,10 @@ body {
   display: flex;
   flex-direction: column;
   gap: 5px;
+  padding-bottom: 10px;
+  border-bottom: 3px solid transparent;
+  -webkit-border-image: linear-gradient(90deg, rgba(135, 135, 135, 1) 0%, rgba(74, 80, 157, 1) 50%, rgb(133, 136, 180) 100%);
+  border-image-slice: 1;
 }
 
 .section1-descriptions-text2 h2 {
