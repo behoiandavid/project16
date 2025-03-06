@@ -572,6 +572,7 @@ a {
 .section4-block-top {
   display: flex;
   flex-direction: row;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
 .section4-block-text {
@@ -629,6 +630,7 @@ a {
   border-radius: 50px;
   cursor: pointer;
   transition: 0.3s;
+  margin-top: 20px;
 }
 
 .section4-block-button button:hover {
