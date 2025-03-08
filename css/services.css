@@ -158,36 +158,54 @@ body {
 :root {
   --white: #ffffff;
   --brilliantazure: #24a3ff;
-  --background: linear-gradient(90.13deg, #f0145a 0.84%, #ef8080 99.96%);
+  --background: rgb(135, 135, 135);
+  --background1: linear-gradient(
+    90deg,
+    rgba(135, 135, 135, 1) 0%,
+    rgba(74, 80, 157, 1) 50%,
+    rgba(0, 6, 82, 1) 100%
+  );
   --balck: #000000;
-  --deepkoamaru: #323264;
+  --deepkoamaru: #06064e;
   --grey: #b3b3ba;
   --independence: #46466e;
   --cultured: #f5f5fa;
   --raspberry: #f0145a;
   --brightgray: #e6e6f0;
   --box-shadow: 0px 0px 20px 0px #24a3ff80;
-  --background: linear-gradient(228.57deg,
-      #323264 11.93%,
-      #323264 57.17%,
-      #643e72 87.46%);
+  --background: linear-gradient(
+    228.57deg,
+    #323264 11.93%,
+    #323264 57.17%,
+    #643e72 87.46%
+  );
   --fontsizep: 16px;
   --padding: 2%;
   --fontweight: 700;
 }
-
-.bg-gray {
-  background-color: var(--cultured);
-}
-
-.bg-white {
-  background-color: var(--white);
+.bg-darkblue {
+  background-color: #04042e;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 40px;
 }
 
 .active {
-  color: var(--raspberry);
+  background: linear-gradient(
+    90deg,
+    rgba(135, 135, 135, 1) 0%,
+    rgba(74, 80, 157, 1) 50%,
+    rgb(133, 136, 180) 100%
+  );
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
   font-size: var(--fontsizep);
-  border-bottom: 3px solid var(--raspberry);
+  border-bottom: 3px solid transparent;
+  -webkit-border-image: linear-gradient(
+    90deg,
+    rgba(135, 135, 135, 1) 0%,
+    rgba(74, 80, 157, 1) 50%,
+    rgb(133, 136, 180) 100%
+  );
+  border-image-slice: 1;
 }
 
 .header-mobile {
@@ -195,10 +213,7 @@ body {
 }
 
 body {
-  background: linear-gradient(228.57deg,
-      #323264 11.93%,
-      #323264 57.17%,
-      #643e72 87.46%);
+  background-color: #04042e;
   background-repeat: no-repeat;
 }
 
@@ -209,35 +224,31 @@ a {
   line-height: 19.5px;
 }
 
-.gradient {
-  background: linear-gradient(228.57deg,
-      #323264 11.93%,
-      #323264 57.17%,
-      #643e72 87.46%);
-}
-
-.facebook-header {
-  color: var(--grey);
-  transition: color 0.3s ease;
-}
-
-.facebook-header:hover {
-  color: var(--raspberry);
-}
-
 .header-block {
   padding: var(--padding);
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   align-items: center;
-  justify-content: space-between;
+  gap: 20px;
+}
+
+.header-logo img {
+  width: 300px;
+}
+
+.header-mobile {
+  display: none;
 }
 
 .header-block-right {
   display: flex;
   flex-direction: column;
-  align-items: flex-end;
+  align-items: center;
   gap: 20px;
+}
+
+.header-block-logo img {
+  width: 35px;
 }
 
 .header-block-top {
@@ -245,10 +256,6 @@ a {
   flex-direction: row;
   align-items: center;
   gap: 12px;
-}
-
-.logo-tablet {
-  display: none;
 }
 
 .header-block-button {
@@ -268,7 +275,7 @@ a {
   font-weight: var(--fontweight);
   cursor: pointer;
   background-color: var(--background);
-  color: var(--white);
+  color: var(--grey);
 }
 
 .header-block-text {
@@ -276,6 +283,10 @@ a {
   flex-direction: row;
   align-items: center;
   gap: 7px;
+}
+
+.logo-tablet {
+  display: none;
 }
 
 .header-block-text p {
@@ -288,12 +299,20 @@ a {
   font-size: var(--fontsizep);
   line-height: 19.5px;
   font-weight: 700;
-  color: var(--white);
+  color: var(--grey);
 }
 
 .header-block-text span {
   width: 6px;
   height: 6px;
+}
+
+.header-block-logo {
+  cursor: pointer;
+}
+
+.header-block-button button:last-child {
+  color: var(--white);
 }
 
 .header-nav-description {
@@ -311,7 +330,6 @@ a {
   position: relative;
   z-index: 1;
 }
-
 .section1-block {
   padding: var(--padding);
   display: flex;
@@ -326,7 +344,12 @@ a {
 }
 
 .section1-block-top h2 {
-  background: linear-gradient(90.13deg, #f0145a 0.84%, #ef8080 99.96%);
+  background: linear-gradient(
+    90deg,
+    rgb(0, 255, 157) 0%,
+    rgb(39, 176, 255) 46%,
+    rgb(163, 102, 255) 100%
+  );
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   font-size: 38px;
@@ -350,11 +373,13 @@ a {
 
 .section1-block-descriptions {
   padding-top: 60px;
-  width: 356px;
+  width: 250px;
+  gap: 45px;
   display: flex;
   flex-direction: column;
   gap: 20px;
   justify-content: flex-start;
+  align-items: center;
 }
 
 .section1-block-descriptions a {
@@ -362,10 +387,10 @@ a {
   line-height: 26.82px;
   font-weight: 700;
   color: var(--brilliantazure);
+  text-align: center;
 }
 
 @keyframes text {
-
   0%,
   100% {
     transform: scale(1);
@@ -377,7 +402,12 @@ a {
 }
 
 .section1-block-descriptions a:hover {
-  background: #f0145a;
+  background: linear-gradient(
+    90deg,
+    rgb(0, 255, 157) 0%,
+    rgb(39, 176, 255) 46%,
+    rgb(163, 102, 255) 100%
+  );
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   animation: text 1s infinite ease-in-out;
@@ -387,12 +417,15 @@ a {
   font-size: var(--fontsizep);
   line-height: 26px;
   color: var(--white);
+  text-align: center;
 }
 
 .section1-block-image img {
   padding: var(--padding);
   border-radius: 24px;
   background-color: var(--white);
+  width: 100px;
+  height: 100px;
 }
 
 .section2-block {
@@ -503,7 +536,12 @@ a {
   font-size: 38px;
   line-height: 46.32px;
   font-weight: var(--fontweight);
-  background: linear-gradient(90.13deg, #f0145a 0.84%, #ef8080 99.96%);
+  background: linear-gradient(
+    90deg,
+    rgb(0, 255, 157) 0%,
+    rgb(39, 176, 255) 46%,
+    rgb(163, 102, 255) 100%
+  );
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -537,7 +575,6 @@ a {
 }
 
 @keyframes button {
-
   0%,
   100% {
     transform: scale(1);
@@ -663,7 +700,6 @@ a {
 }
 
 @keyframes text {
-
   0%,
   100% {
     transform: scale(0.9);
@@ -713,11 +749,8 @@ a {
   gap: 20px;
 }
 
-.footer-block {
-  padding: var(--padding);
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
+.footer-block-svg img {
+  width: 35px;
 }
 
 .footer-block-top {
@@ -739,20 +772,38 @@ a {
 .footer-block-text p {
   font-size: var(--fontsizep);
   line-height: 19.5px;
-  color: var(--deepkoamaru);
+  background: linear-gradient(
+    90deg,
+    rgb(246, 246, 246) 0%,
+    rgb(93, 100, 189) 50%,
+    rgb(133, 136, 180) 100%
+  );
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
 }
 
 .footer-block-text a {
-  font-size: 12px;
-  line-height: 14.63px;
-  font-weight: var(--fontweight);
-  color: var(--brilliantazure);
+  background: linear-gradient(
+    90deg,
+    rgb(246, 246, 246) 0%,
+    rgb(93, 100, 189) 50%,
+    rgb(133, 136, 180) 100%
+  );
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
 }
 
 .footer-block-text2 h2 {
   font-size: var(--fontsizep);
   line-height: 19.5px;
-  color: var(--grey);
+  background: linear-gradient(
+    90deg,
+    rgb(246, 246, 246) 0%,
+    rgb(93, 100, 189) 50%,
+    rgb(133, 136, 180) 100%
+  );
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
 }
 
 .footer-block-tablet {
@@ -781,10 +832,15 @@ a {
 }
 
 .footer-block-text3 a {
-  font-size: var(--fontsizep);
-  line-height: 19.5px;
-  font-weight: var(--fontweight);
-  color: var(--brilliantazure);
+  background: linear-gradient(
+    90deg,
+    rgb(246, 246, 246) 0%,
+    rgb(93, 100, 189) 50%,
+    rgb(133, 136, 180) 100%
+  );
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  cursor: no-drop;
 }
 
 @media (min-width: 600px) and (max-width: 1024px) {
@@ -942,7 +998,6 @@ a {
   }
 
   @keyframes text {
-
     0%,
     100% {
       transform: scale(1);
@@ -1145,7 +1200,6 @@ a {
   }
 
   @keyframes button {
-
     0%,
     100% {
       transform: scale(1);
@@ -1338,7 +1392,6 @@ a {
   }
 
   @keyframes text {
-
     0%,
     100% {
       transform: scale(0.9);
@@ -1439,7 +1492,7 @@ a {
     text-decoration: none;
   }
 
-  #burger:checked+.burger+.menu {
+  #burger:checked + .burger + .menu {
     opacity: 1;
     visibility: visible;
     transform: translateY(0);
@@ -1471,7 +1524,7 @@ a {
     z-index: 1;
   }
 
-  .header-mobile-menu>a>img {
+  .header-mobile-menu > a > img {
     width: 255px;
   }
 
@@ -1539,7 +1592,6 @@ a {
   }
 
   @keyframes text {
-
     0%,
     100% {
       transform: scale(1);
@@ -1778,7 +1830,6 @@ a {
   }
 
   @keyframes text {
-
     0%,
     100% {
       transform: scale(0.9);
