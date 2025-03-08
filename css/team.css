@@ -428,8 +428,8 @@ a {
 
 .section-about-team-text>.text-span {
   display: flex;
-  flex-direction: row;
-  align-items: center;
+  flex-direction: column;
+  align-items: flex-start;
   gap: 10px;
   margin-top: 20px;
 }
@@ -449,10 +449,12 @@ a {
   color: var(--brilliantazure);
 }
 
-.image-teamate {
+.section-team-about img {
   border-radius: 12px;
-  width: 400px;
-  height: 500px;
+  object-fit: cover;
+  display: flex;
+  width: 350px;
+  height: 436px;
 }
 
 .section-about-team-text>.for-h2 {
