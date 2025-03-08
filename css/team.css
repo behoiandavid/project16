@@ -4,16 +4,15 @@
   margin: 0 auto;
   padding: 0 15px;
 }
+
 :root {
   --white: #ffffff;
   --brilliantazure: #24a3ff;
   --background: rgb(135, 135, 135);
-  --background1: linear-gradient(
-    90deg,
-    rgba(135, 135, 135, 1) 0%,
-    rgba(74, 80, 157, 1) 50%,
-    rgba(0, 6, 82, 1) 100%
-  );
+  --background1: linear-gradient(90deg,
+      rgba(135, 135, 135, 1) 0%,
+      rgba(74, 80, 157, 1) 50%,
+      rgba(0, 6, 82, 1) 100%);
   --balck: #000000;
   --deepkoamaru: #06064e;
   --grey: #b3b3ba;
@@ -22,38 +21,33 @@
   --raspberry: #f0145a;
   --brightgray: #e6e6f0;
   --box-shadow: 0px 0px 20px 0px #24a3ff80;
-  --background: linear-gradient(
-    228.57deg,
-    #323264 11.93%,
-    #323264 57.17%,
-    #643e72 87.46%
-  );
+  --background: linear-gradient(228.57deg,
+      #323264 11.93%,
+      #323264 57.17%,
+      #643e72 87.46%);
   --fontsizep: 16px;
   --padding: 2%;
   --fontweight: 700;
 }
+
 .bg-darkblue {
   background-color: #04042e;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 40px;
 }
 
 .active {
-  background: linear-gradient(
-    90deg,
-    rgba(135, 135, 135, 1) 0%,
-    rgba(74, 80, 157, 1) 50%,
-    rgb(133, 136, 180) 100%
-  );
+  background: linear-gradient(90deg,
+      rgba(135, 135, 135, 1) 0%,
+      rgba(74, 80, 157, 1) 50%,
+      rgb(133, 136, 180) 100%);
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
   font-size: var(--fontsizep);
   border-bottom: 3px solid transparent;
-  -webkit-border-image: linear-gradient(
-    90deg,
-    rgba(135, 135, 135, 1) 0%,
-    rgba(74, 80, 157, 1) 50%,
-    rgb(133, 136, 180) 100%
-  );
+  -webkit-border-image: linear-gradient(90deg,
+      rgba(135, 135, 135, 1) 0%,
+      rgba(74, 80, 157, 1) 50%,
+      rgb(133, 136, 180) 100%);
   border-image-slice: 1;
 }
 
@@ -180,6 +174,25 @@ a {
   z-index: 1;
 }
 
+.team-software {
+  display: flex;
+  flex-direction: row;
+  gap: 35px;
+  align-items: center;
+}
+
+.team-software img {
+  object-fit: cover;
+  width: 100%;
+}
+
+.team-crypto {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 35px;
+}
+
 .section1-team {
   padding: var(--padding);
   margin-top: 20px;
@@ -189,12 +202,10 @@ a {
   font-family: var(--font-family);
   font-weight: 700;
   font-size: 38px;
-  background: linear-gradient(
-    90deg,
-    rgb(0, 255, 157) 0%,
-    rgb(39, 176, 255) 46%,
-    rgb(163, 102, 255) 100%
-  );
+  background: linear-gradient(90deg,
+      rgb(0, 255, 157) 0%,
+      rgb(39, 176, 255) 46%,
+      rgb(163, 102, 255) 100%);
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
 }
@@ -208,13 +219,13 @@ a {
   flex-direction: row;
   margin-top: 40px;
   flex-wrap: wrap;
-  justify-content: space-between;
-  row-gap: 25px;
+  justify-content: center;
+  row-gap: 35px;
 }
 
 .card-team {
   width: 349px;
-  height: 462px;
+  height: 520px;
   transition: transform 0.2s ease, box-shadow 0.3s ease;
   border-radius: 12px;
   box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.5);
@@ -231,6 +242,7 @@ a {
     opacity: 0;
     transform: translateY(20px);
   }
+
   to {
     opacity: 1;
     transform: translateY(0);
@@ -268,8 +280,9 @@ a {
 
 .card-team img {
   border-radius: 12px;
+  object-fit: cover;
   width: 350px;
-  height: 370px;
+  height: 436px;
 }
 
 .card-team-about {
@@ -288,12 +301,10 @@ a {
   font-weight: 400;
   font-size: 14px;
   line-height: 157%;
-  background: linear-gradient(
-    90deg,
-    rgb(246, 246, 246) 0%,
-    rgb(93, 100, 189) 50%,
-    rgb(133, 136, 180) 100%
-  );
+  background: linear-gradient(90deg,
+      rgb(246, 246, 246) 0%,
+      rgb(93, 100, 189) 50%,
+      rgb(133, 136, 180) 100%);
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
 }
@@ -308,6 +319,7 @@ a {
 .card-team-about svg:hover path {
   stroke: var(--raspberry);
 }
+
 .footer-block {
   padding: var(--padding);
   display: flex;
@@ -338,23 +350,19 @@ a {
 .footer-block-text p {
   font-size: var(--fontsizep);
   line-height: 19.5px;
-  background: linear-gradient(
-    90deg,
-    rgb(246, 246, 246) 0%,
-    rgb(93, 100, 189) 50%,
-    rgb(133, 136, 180) 100%
-  );
+  background: linear-gradient(90deg,
+      rgb(246, 246, 246) 0%,
+      rgb(93, 100, 189) 50%,
+      rgb(133, 136, 180) 100%);
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
 }
 
 .footer-block-text a {
-  background: linear-gradient(
-    90deg,
-    rgb(246, 246, 246) 0%,
-    rgb(93, 100, 189) 50%,
-    rgb(133, 136, 180) 100%
-  );
+  background: linear-gradient(90deg,
+      rgb(246, 246, 246) 0%,
+      rgb(93, 100, 189) 50%,
+      rgb(133, 136, 180) 100%);
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
 }
@@ -362,12 +370,10 @@ a {
 .footer-block-text2 h2 {
   font-size: var(--fontsizep);
   line-height: 19.5px;
-  background: linear-gradient(
-    90deg,
-    rgb(246, 246, 246) 0%,
-    rgb(93, 100, 189) 50%,
-    rgb(133, 136, 180) 100%
-  );
+  background: linear-gradient(90deg,
+      rgb(246, 246, 246) 0%,
+      rgb(93, 100, 189) 50%,
+      rgb(133, 136, 180) 100%);
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
 }
@@ -398,15 +404,12 @@ a {
 }
 
 .footer-block-text3 a {
-  background: linear-gradient(
-    90deg,
-    rgb(246, 246, 246) 0%,
-    rgb(93, 100, 189) 50%,
-    rgb(133, 136, 180) 100%
-  );
+  background: linear-gradient(90deg,
+      rgb(246, 246, 246) 0%,
+      rgb(93, 100, 189) 50%,
+      rgb(133, 136, 180) 100%);
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
-  cursor: no-drop;
 }
 
 .section-team-about {
@@ -423,7 +426,7 @@ a {
   flex-direction: column;
 }
 
-.section-about-team-text > .text-span {
+.section-about-team-text>.text-span {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -431,7 +434,7 @@ a {
   margin-top: 20px;
 }
 
-.section-about-team-text > div > span {
+.section-about-team-text>div>span {
   font-family: var(--font-family);
   font-weight: 400;
   font-size: 14px;
@@ -439,7 +442,7 @@ a {
   color: var(--grey);
 }
 
-.section-about-team-text > div > span > a {
+.section-about-team-text>div>span>a {
   font-family: var(--font-family);
   font-weight: 400;
   font-size: 16px;
@@ -452,7 +455,7 @@ a {
   height: 500px;
 }
 
-.section-about-team-text > .for-h2 {
+.section-about-team-text>.for-h2 {
   font-family: var(--font-family);
   font-weight: 700;
   font-size: 38px;
@@ -470,11 +473,11 @@ a {
   border-top: 3px solid var(--brightgray);
 }
 
-.line-and-text > div {
+.line-and-text>div {
   margin-top: 15px;
 }
 
-.line-and-text > div > p {
+.line-and-text>div>p {
   line-height: 120%;
   margin-top: 25px;
 }
@@ -919,7 +922,7 @@ a {
     text-decoration: none;
   }
 
-  #burger:checked + .burger + .menu {
+  #burger:checked+.burger+.menu {
     opacity: 1;
     visibility: visible;
     transform: translateY(0);
@@ -951,7 +954,7 @@ a {
     z-index: 1;
   }
 
-  .header-mobile-menu > .logo {
+  .header-mobile-menu>.logo {
     width: 255px;
   }
 

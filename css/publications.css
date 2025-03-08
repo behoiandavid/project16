@@ -196,14 +196,9 @@ body {
 }
 
 a {
+
   text-decoration: none;
-  background: linear-gradient(90deg,
-      rgb(0, 255, 157) 0%,
-      rgb(39, 176, 255) 46%,
-      rgb(163, 102, 255) 100%);
-  -webkit-text-fill-color: transparent;
-  -webkit-background-clip: text;
-  font-size: var(--fontsizep);
+  color: var(--white);
   font-size: var(--fontsizep);
   line-height: 19.5px;
 }
@@ -547,7 +542,6 @@ body {
   background: linear-gradient(90deg, rgb(246, 246, 246) 0%, rgb(93, 100, 189) 50%, rgb(133, 136, 180) 100%);
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
-  cursor: no-drop;
 }
 
 @media (min-width: 600px) and (max-width: 1024px) {
