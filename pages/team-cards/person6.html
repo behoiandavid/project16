@@ -1,36 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="../../css/team.css" />
-    <link rel="stylesheet" href="../../css/reset.css" />
-    <link rel="stylesheet" href="../../css/bouger-menu.css" />
-    <title>Alexander Alexandrovsky</title>
-  </head>
 
-  <body>
-    <header class="desktop-header">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="../../css/team.css" />
+  <link rel="stylesheet" href="../../css/reset.css" />
+  <link rel="stylesheet" href="../../css/bouger-menu.css" />
+  <title>Roman Bondarenko</title>
+</head>
+
+<body>
+  <header class="header-desktop">
+    <div class="bg-darkblue">
       <div class="container">
         <div class="header-block">
           <div class="header-logo">
-            <a id="index" href="../../pages/team.html">
-              <img src="../../svg/logo_team.svg" alt="logo_team" />
+            <a id="index" href="../../index.html">
+              <img src="../../images/l2ee.png" alt="l2ee" />
             </a>
           </div>
           <div class="header-block-right">
             <div class="header-block-top">
               <div class="header-block-button">
-                <button>УК</button>
-                <button>РУ</button>
-                <button
-                  style="
-                    background-color: #f0145a;
-                    width: 32px;
-                    height: 25px;
-                    border-radius: 8px;
-                  "
-                >
+                <button style="cursor: no-drop; color: var(--white)">
+                  РУ
+                </button>
+                <button style="
+                            background: linear-gradient(
+                              90deg,
+                              rgba(135, 135, 135, 1) 0%,
+                              rgba(74, 80, 157, 1) 50%,
+                              rgb(133, 136, 180) 100%
+                            );
+                            width: 32px;
+                            height: 25px;
+                            border-radius: 8px;
+                            color: var(--white);
+                          ">
                   EN
                 </button>
               </div>
@@ -38,66 +45,48 @@
                 <span>
                   <img src="../../svg/tochk.svg" alt="tochk" />
                 </span>
-                <p>Kyiv, Mechnikova str, 14/1</p>
-                <span>
-                  <img src="../../svg/tochk.svg" alt="tochk" />
-                </span>
-                <h2>0800 211 927</h2>
+                <a id="location" style="
+                            background: var(--white);
+                            -webkit-text-fill-color: transparent;
+                            -webkit-background-clip: text;
+                          " href="https://maps.app.goo.gl/txDdvRCUuPMS15fP8" target="_blank">
+                  <p>Texas, USA</p>
+                </a>
                 <span>
                   <img src="../../svg/tochk.svg" alt="tochk" />
                 </span>
               </div>
               <div class="header-block-logo">
-                <img
-                  src="../../svg/Footer/Assets/Facebook-Header.svg"
-                  alt="Facebook-Header"
-                />
+                <a id="twitter" href="https://x.com/L2ESOL/highlights" target="_blank">
+                  <img src="../../svg/twitter.svg" alt="twitter" />
+                </a>
               </div>
             </div>
             <div class="logo-tablet">
-              <a id="services" href="../../pages/team.html">
-                <img src="../../svg/logo_team.svg" alt="logo_team" />
+              <a id="index" href="../index.html">
+                <img src="../../svg/logo_publications.svg" alt="logo_publications" />
               </a>
             </div>
             <div class="header-block-bottom">
               <nav>
                 <ul class="header-nav-description">
                   <li class="header-nav-descriptions">
-                    <a
-                      style="color: #24a3ff"
-                      id="about_us"
-                      href="../../pages/about_us.html"
-                      >about us</a
-                    >
+                    <a id="about_us" href="../../index.html">home</a>
                   </li>
                   <li class="header-nav-descriptions">
-                    <a
-                      style="color: #24a3ff"
-                      id="services"
-                      href="../../pages/services.html"
-                      >services</a
-                    >
+                    <a id="about_us" href="../../pages/about_us.html">about us</a>
                   </li>
                   <li class="header-nav-descriptions">
-                    <a class="active" id="team" href="../../pages/team.html"
-                      >team</a
-                    >
+                    <a id="services" href="../../pages/services.html">services</a>
                   </li>
                   <li class="header-nav-descriptions">
-                    <a
-                      style="color: #24a3ff"
-                      id="publications"
-                      href="../../pages/publications.html"
-                      >publications</a
-                    >
+                    <a id="team" href="../../pages/team.html" class="active">team</a>
                   </li>
                   <li class="header-nav-descriptions">
-                    <a
-                      style="color: #24a3ff"
-                      id="contact"
-                      href="../../pages/contact.html"
-                      >contact</a
-                    >
+                    <a id="publications" href="../../pages/publications.html">publications</a>
+                  </li>
+                  <li class="header-nav-descriptions">
+                    <a id="contact" href="../../pages/contact.html">contact</a>
                   </li>
                 </ul>
               </nav>
@@ -105,131 +94,77 @@
           </div>
         </div>
       </div>
-    </header>
+    </div>
+  </header>
 
-    <header class="header-mobile">
-      <div class="bg-mobile-header">
-        <div class="container">
-          <section class="header-mobile-lang">
-            <div class="header-block-button">
-              <button>УК</button>
-              <button>РУ</button>
-              <button
-                style="
+
+  <header class="header-mobile">
+    <div class="bg-mobile-header">
+      <div class="container">
+        <section class="header-mobile-lang">
+          <div class="header-block-button">
+            <button>УК</button>
+            <button>РУ</button>
+            <button style="
                   background-color: #f0145a;
                   width: 32px;
                   height: 25px;
                   border-radius: 8px;
-                "
-              >
-                EN
-              </button>
-            </div>
-            <h2>0800 211 927</h2>
-          </section>
-        </div>
+                ">
+              EN
+            </button>
+          </div>
+          <h2>0800 211 927</h2>
+        </section>
       </div>
-      <div class="container">
-        <section class="header-mobile-menu">
-          <a href="../../pages/team.html">
-            <img src="../../svg/logo_team.svg" alt="logo-mobile" class="logo" />
-          </a>
-          <input type="checkbox" id="burger" class="hidden" />
-          <label for="burger" class="burger">
-            <img src="../../svg/bourger2.svg" alt="Menu" />
-          </label>
+    </div>
+    <div class="container">
+      <section class="header-mobile-menu">
+        <a href="../../pages/team.html">
+          <img src="../../svg/logo_team.svg" alt="logo-mobile" class="logo" />
+        </a>
+        <input type="checkbox" id="burger" class="hidden" />
+        <label for="burger" class="burger">
+          <img src="../../svg/bourger2.svg" alt="Menu" />
+        </label>
 
-          <nav class="menu">
-            <ul>
-              <li><a href="../../index.html">Home</a></li>
-              <li><a href="../../pages/about_us.html">About</a></li>
-              <li><a href="../../pages/team.html">Team</a></li>
-              <li><a href="../../pages/contact.html">Contact</a></li>
-              <li><a href="../../pages/services.html">Services</a></li>
-              <li><a href="../../pages/publications.html">Publications</a></li>
-            </ul>
-          </nav>
-        </section>
-      </div>
-    </header>
-    <main class="main-dektops">
-      <div class="container">
-        <section class="section-team-about">
-          <img
-            src="../../images/Team photos/Team-6.jpg"
-            class="image-teamate"
-            alt="team-6"
-          />
-          <div class="section-about-team-text">
-            <h2 class="for-h2">Julia Wolk</h2>
-            <div class="text-span">
-              <span>Associate, Attorney-at-law</span>
-              <img src="../../svg/tochk.svg" alt="tochk" />
-              <span>
-                <a href="">kobzar@forstudy.space</a>
-              </span>
-              <img src="../../svg/tochk.svg" alt="tochk" />
-              <span><a href="">LinkedIn profile</a></span>
-            </div>
-            <div class="line-and-text">
-              <div>
-                <p>
-                  Oksana heads the practice of international trade and shipping.
-                  He specializes in resolving disputes related to the purchase
-                  and sale of raw materials and transportation of goods by sea.
-                </p>
-                <p>
-                  Desis represents the interests of shipowners, freight
-                  forwarders, cargo owners, shipping agents, container lines, as
-                  well as international banks and P&I clubs.
-                </p>
-              </div>
-              <div class="experience">
-                <h2>Education</h2>
-                <p>National University "Odessa Law Academy", Master of Law.</p>
-              </div>
-              <div class="experience">
-                <h2>Experience</h2>
-                <p>
-                  Her professional experience includes resolving disputes under
-                  English law and representing interests in foreign commercial
-                  arbitrations such as GAFTA, FOSFA and LMAA. Danilo also
-                  represents the interests of clients in the state courts of
-                  Ukraine on similar disputes, as well as in the ICAC and IAC at
-                  the CCI of Ukraine.
-                </p>
-              </div>
-            </div>
-          </div>
-        </section>
-      </div>
-    </main>
-    <main class="main-tablet-phone">
-      <section>
-        <div class="container">
-          <div class="section1-team-about-us">
-            <div class="section1-team-left">
-              <img src="../../images/Team photos/Team-6.jpg" alt="team-6" />
-            </div>
-            <div class="section1-team-right">
-              <h2 class="section1-team-text1">Julia Wolk</h2>
-              <div class="section1-team-text2">
-                <p>Associate, Attorney-at-law</p>
-                <a id="#" href="#">kobzar@forstudy.space</a>
-                <a id="#" href="#">LinkedIn profile</a>
-              </div>
-            </div>
-          </div>
-        </div>
+        <nav class="menu">
+          <ul>
+            <li><a href="../../index.html">Home</a></li>
+            <li><a href="../../pages/about_us.html">About</a></li>
+            <li><a href="../../pages/team.html">Team</a></li>
+            <li><a href="../../pages/contact.html">Contact</a></li>
+            <li><a href="../../pages/services.html">Services</a></li>
+            <li><a href="../../pages/publications.html">Publications</a></li>
+          </ul>
+        </nav>
       </section>
-      <section>
-        <div class="container">
-          <div class="section2-team-about-us">
-            <div class="section2-team-text1">
+    </div>
+  </header>
+  <main class="main-dektops">
+    <div class="container">
+      <section class="section-team-about">
+        <img src="../../images/roman_bondarenko.jpg" class="image-teamate" alt="roman_bondarenko" />
+        <div class="section-about-team-text">
+          <h2 class="for-h2">Roman Bondarenko</h2>
+          <div class="text-span">
+            <span>The creators of the website, FullStack developer</span>
+            <span>
+              <a id="#" href="#">romanbond1111@gmail.com</a>
+            </span>
+            <span>
+              <a id="linkedin"
+                href="https://www.linkedin.com/in/%D1%80%D0%BE%D0%BC%D0%B0-%D0%B1%D0%BE%D0%BD%D0%B4%D0%B0%D1%80%D0%B5%D0%BD%D0%BA%D0%BE-17a429341/"
+                target="_blank">LinkedIn
+                profile</a>
+            </span>
+          </div>
+          <div class="line-and-text">
+            <div>
               <p>
                 Oksana heads the practice of international trade and shipping.
-                He specializes in resolving disputes related to the purchase and
-                sale of raw materials and transportation of goods by sea.
+                He specializes in resolving disputes related to the purchase
+                and sale of raw materials and transportation of goods by sea.
               </p>
               <p>
                 Desis represents the interests of shipowners, freight
@@ -237,59 +172,110 @@
                 well as international banks and P&I clubs.
               </p>
             </div>
-            <div class="section2-team-text2">
-              <h2>EDUCATION</h2>
+            <div class="experience">
+              <h2>Education</h2>
               <p>National University "Odessa Law Academy", Master of Law.</p>
             </div>
-            <div class="section2-team-text2">
-              <h2>EXPERIENCE</h2>
+            <div class="experience">
+              <h2>Experience</h2>
               <p>
                 Her professional experience includes resolving disputes under
                 English law and representing interests in foreign commercial
                 arbitrations such as GAFTA, FOSFA and LMAA. Danilo also
                 represents the interests of clients in the state courts of
                 Ukraine on similar disputes, as well as in the ICAC and IAC at
-                the CCI of Ukraine
+                the CCI of Ukraine.
               </p>
             </div>
           </div>
         </div>
       </section>
-    </main>
-    <footer>
-      <div class="bg-gray">
-        <div class="container">
-          <div class="footer-block">
-            <div class="footer-block-top">
-              <div class="footer-block-text">
-                <p>Kyiv, Mechnikova str, 14/1</p>
-                <img src="../../svg/tochk.svg" alt="tochk" />
-                <a id="#" href="#">ON MAP</a>
-              </div>
-              <div class="footer-block-text2">
-                <h2>© 2021 HLEGAL Law company, LLC</h2>
-              </div>
-            </div>
-            <div class="footer-block-bottom">
-              <div class="footer-block-svg">
-                <img
-                  src="../../svg/Footer/Assets/Facebook-Footer.svg"
-                  alt="facebook-footer"
-                />
-              </div>
-              <div class="footer-block-text3">
-                <img src="../../svg/tochk.svg" alt="tochk" />
-                <h2>0800 211 927</h2>
-                <img src="../../svg/tochk.svg" alt="tochk" />
-                <a id="#" href="#">contact@forstudy.space</a>
-              </div>
-            </div>
-            <div class="footer-block-tablet">
-              <h2>© 2021 HLEGAL Law company, LLC</h2>
+    </div>
+  </main>
+  <main class="main-tablet-phone">
+    <section>
+      <div class="container">
+        <div class="section1-team-about-us">
+          <div class="section1-team-left">
+            <img src="../../images/Team photos/Team-6.jpg" alt="team-6" />
+          </div>
+          <div class="section1-team-right">
+            <h2 class="section1-team-text1">Julia Wolk</h2>
+            <div class="section1-team-text2">
+              <p>Associate, Attorney-at-law</p>
+              <a id="#" href="#">kobzar@forstudy.space</a>
+              <a id="#" href="#">LinkedIn profile</a>
             </div>
           </div>
         </div>
       </div>
-    </footer>
-  </body>
+    </section>
+    <section>
+      <div class="container">
+        <div class="section2-team-about-us">
+          <div class="section2-team-text1">
+            <p>
+              Oksana heads the practice of international trade and shipping.
+              He specializes in resolving disputes related to the purchase and
+              sale of raw materials and transportation of goods by sea.
+            </p>
+            <p>
+              Desis represents the interests of shipowners, freight
+              forwarders, cargo owners, shipping agents, container lines, as
+              well as international banks and P&I clubs.
+            </p>
+          </div>
+          <div class="section2-team-text2">
+            <h2>EDUCATION</h2>
+            <p>National University "Odessa Law Academy", Master of Law.</p>
+          </div>
+          <div class="section2-team-text2">
+            <h2>EXPERIENCE</h2>
+            <p>
+              Her professional experience includes resolving disputes under
+              English law and representing interests in foreign commercial
+              arbitrations such as GAFTA, FOSFA and LMAA. Danilo also
+              represents the interests of clients in the state courts of
+              Ukraine on similar disputes, as well as in the ICAC and IAC at
+              the CCI of Ukraine
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <div class="bg-gray">
+      <div class="container">
+        <div class="footer-block">
+          <div class="footer-block-top">
+            <div class="footer-block-text">
+              <p>Kyiv, Mechnikova str, 14/1</p>
+              <img src="../../svg/tochk.svg" alt="tochk" />
+              <a id="#" href="#">ON MAP</a>
+            </div>
+            <div class="footer-block-text2">
+              <h2>© 2021 HLEGAL Law company, LLC</h2>
+            </div>
+          </div>
+          <div class="footer-block-bottom">
+            <div class="footer-block-svg">
+              <img src="../../svg/Footer/Assets/Facebook-Footer.svg" alt="facebook-footer" />
+            </div>
+            <div class="footer-block-text3">
+              <img src="../../svg/tochk.svg" alt="tochk" />
+              <h2>0800 211 927</h2>
+              <img src="../../svg/tochk.svg" alt="tochk" />
+              <a id="#" href="#">contact@forstudy.space</a>
+            </div>
+          </div>
+          <div class="footer-block-tablet">
+            <h2>© 2021 HLEGAL Law company, LLC</h2>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
+
 </html>
